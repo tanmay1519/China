@@ -1,0 +1,55 @@
+{%  extends "boycott/Basic.html" %}
+{% block title %}
+Indian
+{% endblock %}
+
+{% block css %}
+<style>
+.main{
+text-align:center;}
+body {
+  background-color : grey;
+}
+
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+</style>
+
+{% endblock %}
+
+{% block body %}
+<div class="main container">
+       <h1>Non Chinese Options for {{Product.ChinaPr}} are :-</h1>
+<div class=" bg1 pt-5 row">
+
+    <div class="col-4 ">
+   <h1 style = "color:orange;" >Congragulations!</h1>
+        <br>
+        <h2 style = "color:white;" >
+            You Have Found </h2>
+        <h2 style = "color:blue;" >Good</h2>
+           <h2 style = "color:white;" >
+            Non Chinese  </h2>
+       <h2 style = "color:Green;">   Alternatives
+        </h2>
+   <h1 style = "color:red;" >Boycott China </h1>
+    </div>
+    <div class="col-4 center">
+        <img src = "/media/boycott/images/inida.jpg" class="center" width = "100%" >
+        <h2 >{{Product.IndPr1}}</h2>
+        <h2 >{{Product.IndPr2}}</h2>
+    </div>
+    <div class="col-4">
+<img src = "/media/boycott/images/world.jpg" class="center" width = "100%" >
+         <h2 >{{Product.WorPr1}}</h2>
+        <h2 >{{Product.WorPr2}}</h2>
+    </div>
+    </div>
+</div>
+
+{% endblock %}
